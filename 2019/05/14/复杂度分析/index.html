@@ -96,18 +96,22 @@
 
 
 
-  <meta name="description" content="十年学会编程为什么每个人都急于求成？我们来看看类似《24小时自学C++》这种标题党，到底说的什么鬼东西：  自学：24小时之内，你没有时间写几个有意义的程序，也就无法从成功或失败中学到经验。24小时之内，你没有时间和一个有经验的程序员合作交流，也就无从理解使用C++编程的真实场景。简单来说，时间太短，你啥也学不到。因此，有这种干货标题的速成书，只是让你走马观花的瞧一下，绝非深入的理解。18世纪的英">
-<meta name="keywords" content="左耳听风">
+  <meta name="description" content="如何分析、统计算法的执行效率和资源消耗？数据结构与算法解决的问题就是如何使代码又“快”又“省”。所以，执行效率是一个重要的考量指标，这里就要用到：时间、空间复杂度分析。 为什么需要复杂度分析？ 测试结果非常依赖测试环境 测试结果受数据规模的影响较大  我们需要一个不用具体的测试数据来测试，就可以粗略的估计算法的执行效率。 大O复杂度表示法算法的执行效率，粗略的讲，就是算法代码的执行时间。 所有代码">
+<meta name="keywords" content="数据结构与算法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="十年学会编程">
-<meta property="og:url" content="http://yoursite.com/2019/05/08/十年学会编程/index.html">
+<meta property="og:title" content="复杂度分析">
+<meta property="og:url" content="http://yoursite.com/2019/05/14/复杂度分析/index.html">
 <meta property="og:site_name" content="诸葛村夫小草堂">
-<meta property="og:description" content="十年学会编程为什么每个人都急于求成？我们来看看类似《24小时自学C++》这种标题党，到底说的什么鬼东西：  自学：24小时之内，你没有时间写几个有意义的程序，也就无法从成功或失败中学到经验。24小时之内，你没有时间和一个有经验的程序员合作交流，也就无从理解使用C++编程的真实场景。简单来说，时间太短，你啥也学不到。因此，有这种干货标题的速成书，只是让你走马观花的瞧一下，绝非深入的理解。18世纪的英">
+<meta property="og:description" content="如何分析、统计算法的执行效率和资源消耗？数据结构与算法解决的问题就是如何使代码又“快”又“省”。所以，执行效率是一个重要的考量指标，这里就要用到：时间、空间复杂度分析。 为什么需要复杂度分析？ 测试结果非常依赖测试环境 测试结果受数据规模的影响较大  我们需要一个不用具体的测试数据来测试，就可以粗略的估计算法的执行效率。 大O复杂度表示法算法的执行效率，粗略的讲，就是算法代码的执行时间。 所有代码">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-08T15:22:18.653Z">
+<meta property="og:image" content="http://yoursite.com/images/代码执行时间.jpg">
+<meta property="og:image" content="http://yoursite.com/images/几种常见的复杂度分析.jpg">
+<meta property="og:image" content="http://yoursite.com/images/复杂度曲线.jpg">
+<meta property="og:updated_time" content="2019-05-14T16:15:36.568Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="十年学会编程">
-<meta name="twitter:description" content="十年学会编程为什么每个人都急于求成？我们来看看类似《24小时自学C++》这种标题党，到底说的什么鬼东西：  自学：24小时之内，你没有时间写几个有意义的程序，也就无法从成功或失败中学到经验。24小时之内，你没有时间和一个有经验的程序员合作交流，也就无从理解使用C++编程的真实场景。简单来说，时间太短，你啥也学不到。因此，有这种干货标题的速成书，只是让你走马观花的瞧一下，绝非深入的理解。18世纪的英">
+<meta name="twitter:title" content="复杂度分析">
+<meta name="twitter:description" content="如何分析、统计算法的执行效率和资源消耗？数据结构与算法解决的问题就是如何使代码又“快”又“省”。所以，执行效率是一个重要的考量指标，这里就要用到：时间、空间复杂度分析。 为什么需要复杂度分析？ 测试结果非常依赖测试环境 测试结果受数据规模的影响较大  我们需要一个不用具体的测试数据来测试，就可以粗略的估计算法的执行效率。 大O复杂度表示法算法的执行效率，粗略的讲，就是算法代码的执行时间。 所有代码">
+<meta name="twitter:image" content="http://yoursite.com/images/代码执行时间.jpg">
 
 
 
@@ -115,7 +119,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/05/08/十年学会编程/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/14/复杂度分析/">
 
 
 
@@ -125,7 +129,7 @@
   };
 </script>
 
-  <title>十年学会编程 | 诸葛村夫小草堂</title>
+  <title>复杂度分析 | 诸葛村夫小草堂</title>
   
 
 
@@ -341,7 +345,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/08/十年学会编程/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/14/复杂度分析/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="橘子er">
@@ -358,7 +362,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">十年学会编程
+          <h1 class="post-title" itemprop="name headline">复杂度分析
 
               
             
@@ -384,12 +388,24 @@
                 
               
 
-              <time title="创建时间：2019-05-08 22:52:01 / 修改时间：23:22:18" itemprop="dateCreated datePublished" datetime="2019-05-08T22:52:01+08:00">2019-05-08</time>
+              <time title="创建时间：2019-05-14 23:14:41" itemprop="dateCreated datePublished" datetime="2019-05-14T23:14:41+08:00">2019-05-14</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-05-15 00:15:36" itemprop="dateModified" datetime="2019-05-15T00:15:36+08:00">2019-05-15</time>
               
             
           </span>
@@ -406,7 +422,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/程序员练级攻略/" itemprop="url" rel="index"><span itemprop="name">程序员练级攻略</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/数据结构与算法之美/" itemprop="url" rel="index"><span itemprop="name">数据结构与算法之美</span></a></span>
 
                 
                 
@@ -441,44 +457,27 @@
       
 
       
-        <h2 id="十年学会编程"><a href="#十年学会编程" class="headerlink" title="十年学会编程"></a>十年学会编程</h2><h3 id="为什么每个人都急于求成？"><a href="#为什么每个人都急于求成？" class="headerlink" title="为什么每个人都急于求成？"></a>为什么每个人都急于求成？</h3><p>我们来看看类似《24小时自学C++》这种标题党，到底说的什么鬼东西：</p>
-<ul>
-<li><p><strong>自学</strong>：24小时之内，你没有时间写几个有意义的程序，也就无法从成功或失败中学到经验。24小时之内，你没有时间和一个有经验的程序员合作交流，也就无从理解使用C++编程的真实场景。简单来说，时间太短，你啥也学不到。因此，有这种干货标题的速成书，只是让你走马观花的瞧一下，绝非深入的理解。18世纪的英国诗人亚历山大·蒲柏曾说过：“一知半解”是一件危险的事情。这个哥哥还给牛顿写了最出名的墓志铭之一：“<strong>自然和自然律隐没在黑暗中；上帝说，让牛顿去吧！遂一片光明</strong>。”</p>
-</li>
-<li><p><strong>C++</strong>:在24小时之内，能学会一些C++的语法，但是，仅此而已了。但是，24小时之内，C++语言的精华或糟粕，你都学不到。重点是什么？(首界图灵奖得主)Alan Perlis曾说过：“<strong>不能影响你编程思维方式的语言，是不值得学习的.</strong>”一个更加可能的场景是，在工作中，你不得不学习C++（或者JavaScript，Processing之类）的一小部分，来调用一些原有的接口，完成某个特定的任务。这种情况下，表面上说是在学习如何编程，其实只是在应付一下手上的活。</p>
-</li>
-<li><p><strong>24小时内</strong>:很不幸，24小时太少了，原因下面告诉你。</p>
-</li>
+        <h2 id="如何分析、统计算法的执行效率和资源消耗？"><a href="#如何分析、统计算法的执行效率和资源消耗？" class="headerlink" title="如何分析、统计算法的执行效率和资源消耗？"></a>如何分析、统计算法的执行效率和资源消耗？</h2><p>数据结构与算法解决的问题就是如何使代码又“快”又“省”。所以，执行效率是一个重要的考量指标，这里就要用到：时间、空间复杂度分析。</p>
+<h4 id="为什么需要复杂度分析？"><a href="#为什么需要复杂度分析？" class="headerlink" title="为什么需要复杂度分析？"></a>为什么需要复杂度分析？</h4><ul>
+<li>测试结果非常依赖测试环境</li>
+<li>测试结果受数据规模的影响较大</li>
 </ul>
-<hr>
-<h3 id="十年学会编程-1"><a href="#十年学会编程-1" class="headerlink" title="十年学会编程"></a>十年学会编程</h3><p>研究表明，想在任何领域成为专家，大概需要10年的时间，这些领域包括下棋，作曲，发电报，弹钢琴，游泳，打网球，研究神经心理学和拓扑学。<strong>关键在于有针对性的训练，而不是漫无目的重复，训练的内容要刚好超过你现有的水平，练习以后要分析你的表现，改正发现的错误，然后重复，再重复。</strong>没有什么捷径可走，即使是Mozart，一个4岁就能弹琴的音乐天才，也是用了13年的时间，才真正的写出世界级的音乐作品。在流行音乐上，Beatles好像是在1964年访美期间一夜成名的。实际上，他们从1957年就已经开始在利物浦和汉堡的小酒馆里唱歌了，他们组建乐队的时间就更早了，他们第一张取得巨大成功的专辑《佩帕军士》，是在1967年发行的。</p>
-<p>马尔科姆·格拉德威尔让这个理论广为人知，虽然他说的是另一个说法，10，000个小时而不是10年。法国现实主义摄影大师亨利·卡蒂埃-布列松有另外一个标准，他说你的前10,000张照片是你最差的。真正的大师要用一生来完成，英国作家，文学评论家和诗人塞缪尔·约翰逊说过：“在任何领域取得卓越的成就都要用一生的努力，不要妄想可以投机取巧。”英国的诗人乔叟也曾经说过：”吾生也有涯 而知也无涯。”同样，公元前400年的希波克拉底也表达过类似的意思，他也认为艺术没有止境，生命却有尽头。他说的这句话有个更长的版本，翻译成英语的意思是：“<strong>生命有尽头，艺术无止境，机遇转瞬即逝，练功走火入魔，决定优柔寡断</strong>。”当然，不会有一个确定的答案告诉你需要多长时间，毕竟，假设掌握所有的技能(比如编程，下棋，跳棋和音乐)需要相同的时间也不合适，不同的人也会用不同的时间。K.Anders Ericsson教授说过：“值得注意的是，在大多数领域，即使你是个天才，要达到专家级别的高水平仍然需要时间。<strong>10，000个小时只是给你一个概念，一个天才，如果每周练习10到20个小时的时间，仍然需要数年时间才能达到专家级别的水平</strong>。”</p>
-<hr>
-<h4 id="所以你想成为一个程序员"><a href="#所以你想成为一个程序员" class="headerlink" title="所以你想成为一个程序员"></a>所以你想成为一个程序员</h4><p>这里是编程成功的秘笈：</p>
-<ul>
-<li><p><strong>要对编程感兴趣</strong>，要从中能获得快乐。保证编程足够有趣，这样才能让你花10年的时间或者10，000个小时在上面也不觉得枯燥无味。</p>
-</li>
-<li><p><strong>动手编程</strong>。最好的学习方法是边学边做。常言道：“人的最高功力并不能通过做一天和尚撞一天钟这样的重复经验获得，但是，最高的功力可以通过有针对性的日复一日年复一年的训练来获得。”并且，“最有效果的学习需要有针对性的任务，这些任务的难度还要因人而异，并且有合理的反馈渠道，并能够根据这些反馈作出相应的改进。”</p>
-</li>
-<li><p><strong>和其他的程序员交流</strong>；阅读别人的代码。这比看书或者参加培训课程要重要。  </p>
-</li>
-<li><p>无论是什么情况，读死书肯定是不行的。计算机科学不会让你成为编程专家，就像学习画笔和颜料不可能让你成为画家一样。</p>
-</li>
-<li><p>和其他的程序员一起参与一些项目。<strong>在一些项目中成为最出色的程序员；在另一些项目中当最差劲的程序员。</strong>在当最出色的程序员的时候，要测试你领导项目的能力，用你的视野来启发别人。如果你是项目中最差的那个，要学习牛人们在做什么，如果他们不喜欢做的，你要拿来做。</p>
-</li>
-<li><p>接手并推进别人的项目。理解其他人写的代码。如果别人有没有考虑到的问题，你能理解并修复这些问题。思考并设计你的软件，让这些软件容易被他人维护。  </p>
-</li>
-<li><p>学习至少6种编程语言。这6种语言中，包括一种支持抽象类的(例如Java或者C++)，一种支持函数的(Lisp, ML或者Haskell)，一种支持语义抽象的(Lisp)，一种支持声明规范的(Prolog或者C++模板)，还有一种支持并发的(Clojure或Go)。</p>
-</li>
-<li><p>记住，在“计算机科学”中在“计算机”这个词语。理解执行一条指令要花多长时间，从内存中取一个字（要考虑缓存有没有命中的情况）要多久，从硬盘中连续读字节要多久，在硬盘中寻址定位要多久？</p>
-</li>
-<li><p>很难说能从书本中学到多少东西。我第一个小孩出生的时候，我读了所有的“如何做”系列的书，但是，没有什么头绪。30个月以后，当我的第二个孩子出生，我还要重温一下那些书么？当然不用了！我都已经是老司机了，我完全靠我自己的经验，事实也证明我自己的经验要胜过那些专家们写的上千页的书。</p>
-</li>
-<li><p>此处假设有一些人天生有成为伟大设计师的潜质，然后，就是正确的去引导他们。艾伦·佩里斯一针见血地说：”假如每个人都可以学会雕刻，那就得教米开朗基罗哪些事不要去做。对于伟大程序员，也是如此。”Perlis认为，伟大的人有一种内在的特质，这种特质往往比接受训练更重要。但是，这些特质是从哪里来的呢？与生俱来的？还是通过后天勤奋而来的？正如 动画片《料理鼠王》里的幻象大厨Auguste Gusteau说的那样：“谁都能做饭，但只有那些无所畏惧的人才能成为大厨！”我认为“<strong>把你生命中的大部分时间花在有针对性的练习上”这种精神，看作一种自愿奉献的精神！但或许“无所畏惧”才是体现这种精神的真谛。</strong>或者，就像是《料理鼠王》里那个与 Gusteau 作对的刻薄的美食评论家 Anton Ego 说的那样：“不是任何人都能成为伟大的艺术家，不过，伟大的艺术家可以来自任何地方。”</p>
-</li>
+<p>我们需要一个不用具体的测试数据来测试，就可以粗略的估计算法的执行效率。</p>
+<h4 id="大O复杂度表示法"><a href="#大O复杂度表示法" class="headerlink" title="大O复杂度表示法"></a>大O复杂度表示法</h4><p>算法的执行效率，粗略的讲，就是算法代码的执行时间。</p>
+<p>所有代码的执行时间T(n) 与每行代码的执行次数成正比。</p>
+<p><img src="/images/代码执行时间.jpg" alt></p>
+<!--T(n)表示代码的执行时间；n代表数据规模的大小；f(n)表示每行代码执行的次数总和；O表示代码的执行时间与f(n)表达式成正比-->
+<p>其实，大O时间复杂度表示的是：代码执行时间随着数据规模增长的变化趋势，也称为，渐进时间复杂度，简称时间复杂度。</p>
+<h4 id="时间复杂度分析"><a href="#时间复杂度分析" class="headerlink" title="时间复杂度分析"></a>时间复杂度分析</h4><ul>
+<li>只关注循环执行次数最多的一段代码</li>
+<li>加法法则：总的时间复杂度就等于量级最大的那段代码的时间复杂度</li>
+<li>乘法法则：嵌套代码的复杂度等于嵌套内外代码复杂度的乘积</li>
 </ul>
-<hr>
-<p>所以，尽管买本 Java/Ruby/Javascript/PHP 的书吧。你可能会从中学到点儿有用的东西。但作为一个程序员，在 21 天内或 24 小时内改变你的人生，或者提高你实际的编程水平，这是不可能的。你尝试过连续 24 个月不间断的努力提高自己么？好吧，好吧，你该上路了…… </p>
+<p>以上是三种分析技巧，不用刻意去记忆，关键在于“熟练”，多看案例，多分析才是王道！</p>
+<h4 id="几种常见的时间复杂度实例分析"><a href="#几种常见的时间复杂度实例分析" class="headerlink" title="几种常见的时间复杂度实例分析"></a>几种常见的时间复杂度实例分析</h4><p><img src="/images/几种常见的复杂度分析.jpg" alt></p>
+<h4 id="空间复杂度分析"><a href="#空间复杂度分析" class="headerlink" title="空间复杂度分析"></a>空间复杂度分析</h4><p>类比时间复杂度，空间复杂度全称是渐进空间复杂度，表示算法的存储空间与数据规模之间的增长关系。</p>
+<h4 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h4><p><img src="/images/复杂度曲线.jpg" alt></p>
+<p>复杂度分析并不难，关键在于多练。</p>
 
       
     </div>
@@ -502,7 +501,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/左耳听风/" rel="tag"># 左耳听风</a>
+            <a href="/tags/数据结构与算法/" rel="tag"># 数据结构与算法</a>
           
         </div>
       
@@ -515,8 +514,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/08/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2019/05/09/读书笔记-《暗时间》/" rel="next" title="读书笔记-《暗时间》">
+                <i class="fa fa-chevron-left"></i> 读书笔记-《暗时间》
               </a>
             
           </div>
@@ -524,10 +523,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/05/08/程序员的谎谬之言还是至理名言？/" rel="prev" title="程序员的谎谬之言还是至理名言？">
-                程序员的谎谬之言还是至理名言？ <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -708,7 +703,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#十年学会编程"><span class="nav-number">1.</span> <span class="nav-text">十年学会编程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么每个人都急于求成？"><span class="nav-number">1.1.</span> <span class="nav-text">为什么每个人都急于求成？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#十年学会编程-1"><span class="nav-number">1.2.</span> <span class="nav-text">十年学会编程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#所以你想成为一个程序员"><span class="nav-number">1.2.1.</span> <span class="nav-text">所以你想成为一个程序员</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#如何分析、统计算法的执行效率和资源消耗？"><span class="nav-number">1.</span> <span class="nav-text">如何分析、统计算法的执行效率和资源消耗？</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#为什么需要复杂度分析？"><span class="nav-number">1.0.1.</span> <span class="nav-text">为什么需要复杂度分析？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#大O复杂度表示法"><span class="nav-number">1.0.2.</span> <span class="nav-text">大O复杂度表示法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#时间复杂度分析"><span class="nav-number">1.0.3.</span> <span class="nav-text">时间复杂度分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#几种常见的时间复杂度实例分析"><span class="nav-number">1.0.4.</span> <span class="nav-text">几种常见的时间复杂度实例分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#空间复杂度分析"><span class="nav-number">1.0.5.</span> <span class="nav-text">空间复杂度分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#小结"><span class="nav-number">1.0.6.</span> <span class="nav-text">小结</span></a></li></ol></li></ol></div>
             
 
           </div>
